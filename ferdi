@@ -1,0 +1,3 @@
+wget "$(curl --silent "https://api.github.com/repos/getferdi/ferdi/releases" | grep '"browser_download_url":' | sed -E 's/.*"([^"]+)".*/\1/' | grep 'deb' | head -n 1)"
+sudo apt install -y ./ferdi*.deb
+rm -f ferdi*.deb
