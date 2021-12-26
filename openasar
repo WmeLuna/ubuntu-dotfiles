@@ -1,4 +1,0 @@
-curl -LOJ https://github.com/GooseMod/OpenAsar/raw/main/scripts/install.sh
-chmod +x install.sh
-./install.sh ptb
-rm -rf ./install.sh
