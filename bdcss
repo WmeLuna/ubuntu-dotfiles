@@ -1,0 +1,34 @@
+cd ~/.config/BetterDiscord/data/ptb
+echo '@import url("https:/@import url("https://css.wmeluna.com/discord.css");/**/' > custom.css
+echo '{
+    "general": {
+        "emotes": false,
+        "publicServers": false,
+        "voiceDisconnect": false,
+        "showToasts": true,
+        "mediaKeys": false
+    },
+    "addons": {
+        "addonErrors": true,
+        "autoReload": true,
+        "editAction": "system"
+    },
+    "customcss": {
+        "customcss": true,
+        "liveUpdate": true,
+        "openAction": "settings"
+    },
+    "developer": {
+        "debugLogs": false,
+        "devTools": true,
+        "debuggerHotkey": false,
+        "reactDevTools": false,
+        "inspectElement": false,
+        "devToolsWarning": true
+    },
+    "window": {
+        "transparency": false,
+        "removeMinimumSize": false,
+        "frame": false
+    }
+}' > settings.json
