@@ -1,0 +1,3 @@
+cd /usr/share/discord-ptb/resources/
+sudo mv app.asar app.asar.bak
+sudo curl -LOJ https://github.com/GooseMod/OpenAsar/releases/download/nightly/app.asar
