@@ -1,0 +1,7 @@
+#!/bin/bash
+bash -c "$(curl -sL https://github.com/WmeLuna/ubuntu-dotfiles/raw/main/discord)" # install discord
+timeout 60 discord-ptb > /dev/null 2>&1 #allow discord to update
+bash -c "$(curl -sL https://github.com/WmeLuna/ubuntu-dotfiles/raw/main/bdctl)" # install bd
+timeout 10 discord-ptb > /dev/null 2>&1 #allow bd to generate its files
+bash -c "$(curl -sL https://github.com/WmeLuna/ubuntu-dotfiles/raw/main/bdcss)" # set custom css and bd settings
+bash -c "$(curl -sL https://github.com/WmeLuna/ubuntu-dotfiles/raw/main/openasar)" # install open asar
