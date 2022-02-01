@@ -1,5 +1,5 @@
 cd ~/.config/BetterDiscord/data/ptb
-echo '@import url("https:/@import url("https://css.wmeluna.com/discord.css");/**/' > custom.css
+echo '@import url("https://css.wmeluna.com/discord.css");/**/' > custom.css
 echo '{
     "general": {
         "emotes": false,
