@@ -1,2 +1,4 @@
+cd /tmp
 wget -O ./discord.deb "https://discord.com/api/download/ptb?platform=linux&format=deb"
 sudo apt install ./discord.deb -y
+rm -rf discord.deb
