@@ -32,3 +32,32 @@ echo '{
         "frame": false
     }
 }' > settings.json
+
+
+#begin plugin section
+
+cd ~/.config/BetterDiscord/plugins
+curl -LOJ https://github.com/QbDesu/BetterDiscordAddons/raw/potato/Plugins/BetterBotTags/BetterBotTags.plugin.js &
+curl -LOJ https://github.com/HypedDomi/BetterDiscordStuff/raw/main/Plugins/BetterInvites/BetterInvites.plugin.js &
+curl -LOJ https://github.com/TheGreenPig/BetterDiscordPlugins/raw/main/BetterMessageLinks/BetterMessageLinks.plugin.js &
+curl -LOJ https://github.com/mwittrien/BetterDiscordAddons/raw/master/Plugins/BetterNsfwTag/BetterNsfwTag.plugin.js &
+curl -LOJ https://github.com/rauenzi/BetterDiscordAddons/raw/master/Plugins/BetterRoleColors/BetterRoleColors.plugin.js &
+curl -LOJ https://github.com/1Lighty/BetterDiscordPlugins/raw/master/Plugins/CrashRecovery/CrashRecovery.plugin.js &
+curl -LOJ https://github.com/rauenzi/BetterDiscordAddons/raw/master/Plugins/DoNotTrack/DoNotTrack.plugin.js &
+curl -LOJ https://github.com/QWERTxD/BetterDiscordPlugins/raw/main/TypingUsersAvatars/TypingUsersAvatars.plugin.js &
+curl -LOJ https://github.com/l0c4lh057/BetterDiscordStuff/raw/master/Plugins/TypingIndicator/TypingIndicator.plugin.js &
+curl -LOJ https://github.com/Inve1951/BetterDiscordStuff/raw/master/plugins/discordexperiments.plugin.js &
+wait
+cd ~/.config/BetterDiscord/data/ptb
+echo '{
+    "CrashRecovery": true,
+    "TypingUsersAvatars": true,
+    "TypingIndicator": true,
+    "BetterNsfwTag": true,
+    "DoNotTrack": true,
+    "discordExperiments": true,
+    "BetterBotTags": true,
+    "BetterInvites": true,
+    "BetterMessageLinks": true,
+    "BetterRoleColors": true
+}' > plugins.json
