@@ -47,9 +47,18 @@ curl -LOJ https://github.com/rauenzi/BetterDiscordAddons/raw/master/Plugins/DoNo
 curl -LOJ https://github.com/QWERTxD/BetterDiscordPlugins/raw/main/TypingUsersAvatars/TypingUsersAvatars.plugin.js &
 curl -LOJ https://github.com/l0c4lh057/BetterDiscordStuff/raw/master/Plugins/TypingIndicator/TypingIndicator.plugin.js &
 curl -LOJ https://github.com/Inve1951/BetterDiscordStuff/raw/master/plugins/discordexperiments.plugin.js &
+
+#LIBS
+curl -LOJ https://github.com/mwittrien/BetterDiscordAddons/raw/master/Library/0BDFDB.plugin.js &
+curl -LOJ https://github.com/rauenzi/BDPluginLibrary/raw/master/release/0PluginLibrary.plugin.js &
+curl -LOJ https://github.com/1Lighty/BetterDiscordPlugins/raw/master/Plugins/1XenoLib.plugin.js &
+
 wait
 cd ~/.config/BetterDiscord/data/ptb
 echo '{
+    "BDFDB": false,
+    "XenoLib": false,
+    "ZeresPluginLibrary": false,
     "CrashRecovery": true,
     "TypingUsersAvatars": true,
     "TypingIndicator": true,
