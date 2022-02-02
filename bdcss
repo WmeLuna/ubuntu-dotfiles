@@ -67,7 +67,7 @@ echo '{
     "currentVersionInfo": {
         "hasShownChangelog": true
     }
-}' | tee BetterBotTags.config.json BetterInvites.config.json BetterMessageLinks.config.json BetterRoleColors.config.json CrashRecovery.config.json DoNotTrack.config.json > TypingUsersAvatars.config.json
+}' | tee XenoLib.config.json ZeresPluginLibrary.config.json BetterBotTags.config.json BetterInvites.config.json BetterMessageLinks.config.json BetterRoleColors.config.json CrashRecovery.config.json DoNotTrack.config.json > TypingUsersAvatars.config.json
 
 cd ~/.config/BetterDiscord/data/ptb
 echo '{
