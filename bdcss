@@ -54,6 +54,21 @@ curl -LOJ https://github.com/rauenzi/BDPluginLibrary/raw/master/release/0PluginL
 curl -LOJ https://github.com/1Lighty/BetterDiscordPlugins/raw/master/Plugins/1XenoLib.plugin.js &
 
 wait
+#set typingindicator 
+echo '{
+    "didShowIssueHelperPopup": true,
+    "currentVersionInfo": {
+        "hasShownChangelog": true
+    }
+
+}' > TypingIndicator.config.json
+#set all other plugins
+echo '{
+    "currentVersionInfo": {
+        "hasShownChangelog": true
+    }
+}' | tee BetterBotTags.config.json BetterInvites.config.json BetterMessageLinks.config.json BetterRoleColors.config.json CrashRecovery.config.json DoNotTrack.config.json > TypingUsersAvatars.config.json
+
 cd ~/.config/BetterDiscord/data/ptb
 echo '{
     "BDFDB": false,
