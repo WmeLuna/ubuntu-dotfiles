@@ -62,12 +62,23 @@ echo '{
     }
 
 }' > TypingIndicator.config.json
+#set betterrolecolors
+echo '{
+    "currentVersionInfo": {
+        "hasShownChangelog": true
+    },
+    "settings": {
+        "modules": {
+            "chat": false
+        }
+    }
+}' > BetterRoleColors.config.json
 #set all other plugins
 echo '{
     "currentVersionInfo": {
         "hasShownChangelog": true
     }
-}' | tee XenoLib.config.json ZeresPluginLibrary.config.json BetterBotTags.config.json BetterInvites.config.json BetterMessageLinks.config.json BetterRoleColors.config.json CrashRecovery.config.json DoNotTrack.config.json > TypingUsersAvatars.config.json
+}' | tee XenoLib.config.json ZeresPluginLibrary.config.json BetterBotTags.config.json BetterInvites.config.json BetterMessageLinks.config.json CrashRecovery.config.json DoNotTrack.config.json > TypingUsersAvatars.config.json
 
 cd ~/.config/BetterDiscord/data/ptb
 echo '{
