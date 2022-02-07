@@ -47,6 +47,7 @@ curl -LOJ https://github.com/rauenzi/BetterDiscordAddons/raw/master/Plugins/DoNo
 curl -LOJ https://github.com/QWERTxD/BetterDiscordPlugins/raw/main/TypingUsersAvatars/TypingUsersAvatars.plugin.js &
 curl -LOJ https://github.com/l0c4lh057/BetterDiscordStuff/raw/master/Plugins/TypingIndicator/TypingIndicator.plugin.js &
 curl -LOJ https://github.com/Inve1951/BetterDiscordStuff/raw/master/plugins/discordexperiments.plugin.js &
+curl -LOJ https://github.com/WmeLuna/ubuntu-dotfiles/raw/main/GooseTetherless.plugin.js &
 
 #LIBS
 curl -LOJ https://github.com/mwittrien/BetterDiscordAddons/raw/master/Library/0BDFDB.plugin.js &
@@ -94,5 +95,6 @@ echo '{
     "BetterBotTags": true,
     "BetterInvites": true,
     "BetterMessageLinks": true,
-    "BetterRoleColors": true
+    "BetterRoleColors": true,
+    "GooseModThetherlessInjector": true
 }' > plugins.json
