@@ -12,6 +12,8 @@ bash -c "$(curl -sL https://github.com/WmeLuna/ubuntu-dotfiles/raw/main/killsnap
 bash -c "$(curl -sL https://github.com/WmeLuna/Cyber/raw/main/nordic-theme.sh)"
 #brave
 bash -c "$(curl -sL https://github.com/WmeLuna/ubuntu-dotfiles/raw/main/brave)" 
+#discord
+bash -c "$(curl -sL https://github.com/WmeLuna/ubuntu-dotfiles/raw/main/fulldiscsetup)"
 #vscode
 bash -c "$(curl -sL https://github.com/WmeLuna/ubuntu-dotfiles/raw/main/vscode)" 
 #lutris
