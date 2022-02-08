@@ -1,0 +1,24 @@
+sudo systemctl stop apt-daily.service
+sudo systemctl disable apt-daily.service
+sudo systemctl stop apt-daily-upgrade.timer 
+sudo systemctl stop apt-daily-upgrade.timer 
+sudo systemctl disable apt-daily-upgrade.timer 
+sudo systemctl stop apt-daily.timer 
+sudo systemctl disable apt-daily.timer 
+
+sudo apt-get remove networkd-dispatcher -y
+sudo systemctl stop systemd-networkd.service
+sudo systemctl disable systemd-networkd.service
+
+sudo systemctl stop motd-news.timer
+sudo systemctl disable motd-news.timer
+
+echo 'Storage=none' | sudo tee -a /etc/systemd/journald.conf
+
+sudo systemctl stop systemd-journal-flush.service
+sudo systemctl disable systemd-journal-flush.service
+
+echo 'enabled=0' | sudo tee /etc/default/apport
+
+sudo systemctl disable systemd-networkd-wait-online.service
+sudo systemctl mask systemd-networkd-wait-online.service

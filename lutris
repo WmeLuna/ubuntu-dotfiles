@@ -1,0 +1,3 @@
+sudo add-apt-repository ppa:lutris-team/lutris -y
+sudo apt update
+sudo apt-fast install -y lutris
