@@ -1,5 +1,5 @@
 cd /tmp
-curl -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl
+curl -O https://wmeluna.com/sc/betterdiscordctl
 chmod +x betterdiscordctl
 sudo mv betterdiscordctl /usr/local/bin
 betterdiscordctl self-upgrade
