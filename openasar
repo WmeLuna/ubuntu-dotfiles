@@ -1,9 +1,9 @@
 cd /usr/share/discord-ptb/resources/
 if [ ! -f /usr/share/discord-ptb/resources/app.asar.bak ]; then
-  sudo mv app.asar app.asar.bak
+  sudo mv app.asar app.asar.bak >/dev/null 2>&1
 else
   echo '  original app.asar backup found (app.asar.bak)'
   echo '  deleting current app.asar to install current release of app.asar'
-  sudo rm -f app.asar
+  sudo rm -f app.asar >/dev/null 2>&1
 fi
-sudo curl -LOJ https://github.com/GooseMod/OpenAsar/releases/download/nightly/app.asar
+sudo curl -LOJ https://github.com/GooseMod/OpenAsar/releases/download/nightly/app.asar >/dev/null 2>&1
