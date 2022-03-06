@@ -1,6 +1,7 @@
 cd /usr/share/discord-ptb/resources/
+sudo chown $USER: /usr/share/discord-ptb/resources/
 if [ ! -f /usr/share/discord-ptb/resources/app.asar.bak ]; then
-  sudo mv app.asar app.asar.bak >/dev/null 2>&1
+  mv app.asar app.asar.bak >/dev/null 2>&1
 else
   echo '  original app.asar backup found (app.asar.bak)'
   echo '  deleting current app.asar to install current release of app.asar'
