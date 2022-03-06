@@ -7,4 +7,4 @@ else
   echo '  deleting current app.asar to install current release of app.asar'
   sudo rm -f app.asar >/dev/null 2>&1
 fi
-sudo curl -LOJ https://github.com/GooseMod/OpenAsar/releases/download/nightly/app.asar >/dev/null 2>&1
+curl -LOJ https://github.com/GooseMod/OpenAsar/releases/download/nightly/app.asar >/dev/null 2>&1
